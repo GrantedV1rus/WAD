@@ -38,11 +38,12 @@
 
 /* Main Body Styling */
 body {
-    font-family: serif;
+    font-family: Arial, sans-serif;
     height: 100%;
     margin: 0%;
     color: white;
     text-align: center;
+    background-color: #000;
 }
 
 
@@ -88,6 +89,7 @@ body {
 
 /* Background Video */
 .video-bg {
+    background-color: #000;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -323,7 +325,7 @@ div.containerp p {
 }
 
 .contact-section h1 {
-    font-family: serif;
+    font-family: Arial, sans-serif;
     font-size: 3em;
     color: white;
     margin-bottom: 20px;
@@ -404,7 +406,7 @@ div.containerp p {
     line-height: 1.6;
     color: white;
     font-size: large;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 .image-section {

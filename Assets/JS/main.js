@@ -7,3 +7,5 @@ function mission() {
 function contact() {
     alert("Thank you for contacting me. I'll be sure to reply to you as soon as possible.")
 }
+
+
