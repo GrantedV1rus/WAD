@@ -35,6 +35,45 @@
     background-color: dodgerblue;
 }
 
+/* Basic styles for the hamburger icon */
+.hamburger-icon {
+    font-size: 28px;
+    color: white;
+    padding: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+/* Hide the full menu and show the hamburger icon on smaller screens */
+@media (max-width: 768px) {
+    .topnav ul.menu {
+        display: none; /* Hide the menu by default */
+        position: absolute;
+        background-color: #333; /* Match the navbar background color */
+        width: 100%;
+        top: 60px;
+        left: 0;
+        text-align: center;
+    }
+
+    .topnav ul.menu li {
+        float: none; /* Stack items vertically */
+        display: block;
+    }
+
+    .topnav ul.menu li a {
+        padding: 15px;
+    }
+
+    .hamburger-icon {
+        display: block; /* Show hamburger icon on small screens */
+    }
+}
+
+/* Show menu when active */
+.menu.active {
+    display: block;
+}
 
 /* Main Body Styling */
 body {

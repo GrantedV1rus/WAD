@@ -19,3 +19,8 @@ window.addEventListener("load", function() {
     });
 });
 
+//Hamburger Nav
+function toggleMenu() {
+    const menu = document.querySelector('.topnav ul.menu');
+    menu.classList.toggle('active');
+}
