@@ -8,4 +8,14 @@ function contact() {
     alert("Thank you for contacting me. I'll be sure to reply to you as soon as possible.")
 }
 
+//Loading Screen
+window.addEventListener("load", function() {
+    const loader = document.getElementById("loader");
+    loader.classList.add("loader-hide");
+
+    // Remove the loader from the DOM after the animation
+    loader.addEventListener("animationend", () => {
+        loader.style.display = "none";
+    });
+});
 
