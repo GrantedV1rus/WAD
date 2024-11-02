@@ -5,6 +5,7 @@
     padding: 0%;
     overflow: hidden;
     position: fixed;
+    box-shadow: 0 5px 10px 0px black;
     top: 0%;
     width: 100%;
     z-index: 1000;
@@ -26,12 +27,12 @@
 }
 
 .topnav li a:hover:not(.topnavactive) {
-    background-color: rgba(30, 144, 255, 0.25);
+    background-color: dodgerblue;
     color: white;
 }
 
 .topnavactive {
-    background-color: rgba(30, 144, 255, 0.25);
+    background-color: dodgerblue;
 }
 
 
@@ -193,10 +194,24 @@ main {
 .imageflex p {
     color: white;
     text-shadow: 0 0 25px dodgerblue, 0 0 5px darkblue;
-    font-size: large;
+    font-size: 1.1vw; /* Sets a responsive font size relative to the viewport width */
     text-align: center;
-    padding-left: 250px;
+    padding-left: 0;
     border-color: #333333;
+}
+
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+    .imageflex p {
+        font-size: 2vw; /* Slightly increase font size for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .imageflex p {
+        font-size: 2vw; /* Further increase font size for mobile devices */
+    }
 }
 
 /* Polaroid Image Effect */
@@ -226,15 +241,19 @@ div.containerp p {
 }
 
 .goat img {
-    width: 75px;
+    width: 100px;
     position: absolute;
     animation: moveGoat 4s infinite alternate;
     cursor: pointer;
 }
 
+.goat img:hover {
+    transform: rotate(10deg) scale(1.1);
+}
+
 @keyframes moveGoat {
     0% { left: 0; }
-    100% { left: 78%; }
+    100% { left: 95%; }
 }
 
 
@@ -356,4 +375,44 @@ div.containerp p {
 .contact-form button:hover {
     background-color: dodgerblue;
     color: #fff;
+}
+
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.containerr {
+    display: flex;
+    max-width: 56.25em;
+    background-color: transparent;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.text-section {
+    padding: 20px;
+    flex: 1;
+}
+
+.text-section p {
+    margin: 1em 0;
+    line-height: 1.6;
+    color: white;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.image-section {
+    flex: 1;
+}
+
+.image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
